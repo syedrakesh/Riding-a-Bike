@@ -25,10 +25,23 @@ svg{
     transform-box: fill-box;
 }
 
+#bike-body{
+    animation: bike-body 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
 @keyframes wheel {
     from {
         transform: rotateZ(0deg);
     }to {
         transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike-body {
+    from {
+        transform: rotateX(0deg);
+    }to {
+        transform: rotateX(20deg);
     }
 }
