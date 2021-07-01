@@ -18,3 +18,17 @@ svg{
     padding: 50px;
     background-color: #0000001f;
 }
+
+#front-wheel, #back-wheel{
+    animation: wheel 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }to {
+        transform: rotateZ(360deg);
+    }
+}
